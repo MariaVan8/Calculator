@@ -1,0 +1,280 @@
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+  }
+  
+  #root {
+
+    min-height: 60vh;
+    max-width: 310px;
+    margin: 0 auto;
+  }
+
+  #wrapper{
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgb(97, 95, 95);
+}
+
+.displayScreen{
+    height: 290px;
+    height: 50px;
+    margin-bottom: 10px;
+    border:  1px solid black;
+    background-color: rgb(204, 112, 112);
+    border-radius: 5px;
+    align-items: right;
+    overflow-x: visible;
+    /* 
+ */
+    /* direction: rtl; */
+}
+.memory{
+    color: blue;
+    padding-left: 2px;
+    text-align: left;
+}
+
+.input{
+   padding-right: 2px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    display: flex;
+    justify-content: right;
+    max-height: 290px;
+
+    /* direction: rtl; */
+   
+    overflow-y: hidden;
+
+}
+
+#allButtons{
+    display: grid;
+    grid-template-columns:repeat(5, 50px);
+    /* grid-template-row:repeat(6, 50px); */
+    gap: 10px;
+    text-align: center;
+    align-items: center;    
+}
+
+
+.ms, .mc, .mr, .m-minus, .m-plus{
+    background-color: rgb(120, 135, 139);
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ac, .c, .sign, .decimal, .square-root, .percent{
+    background-color:rgb(155, 153, 153);
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.one , .two , .three, .four, .five, .six, .seven, .eight, .nine, .zero{
+    background-color:grey;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.multiply, .add, .subtract, .divide{
+    background-color: rgb(155, 153, 153);
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.equal{
+    background-color:rgb(155, 153, 153);
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 110px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li{
+    list-style: none;
+}
+
+.ms{
+    grid-column-start: 1;
+    grid-row-start: 1;
+} 
+.mc{
+    grid-column-start: 2;
+    grid-row-start: 1;
+
+} 
+.mr{
+    grid-column-start: 3;
+    grid-row-start: 1;
+
+}
+.m-minus{
+    grid-column-start: 4;
+    grid-row-start: 1;
+
+} 
+.m-plus{
+    grid-column-start: 5;
+    grid-row-start: 1;
+
+}
+.divide{
+    grid-column-start: 5;
+    grid-row-start: 2;
+    
+}
+.multiply{
+    grid-column-start: 5;
+    grid-row-start: 3;
+
+} .add{
+    grid-column-start: 5;
+    grid-row-start: 4;
+
+} 
+.subtract{
+    grid-column-start: 5;
+    grid-row-start: 5;
+
+}
+.equal{
+    grid-column-start: 4;
+    grid-row-start: 6;
+}
+.seven{
+    grid-column-start: 2;
+    grid-row-start: 3;
+
+}.eight{
+    grid-column-start: 3;
+    grid-row-start: 3;
+
+}
+.nine{
+    grid-column-start: 4;
+    grid-row-start: 3;
+
+}
+.four{
+    grid-column-start: 2;
+    grid-row-start: 4;
+
+} 
+.five{
+    grid-column-start: 3;
+    grid-row-start: 4;
+
+
+}
+.six{
+    grid-column-start: 4;
+    grid-row-start: 4;
+
+
+}
+.one{
+    grid-column-start: 2;
+    grid-row-start: 5;
+
+} 
+.two{
+    grid-column-start: 3;
+    grid-row-start: 5;
+
+}  
+.three{
+    grid-column-start: 4;
+    grid-row-start: 5;
+
+}
+.zero{
+    grid-column-start: 2;
+    grid-row-start: 6;
+    width: 110px;
+    height: 50px;
+
+
+}
+.sign{
+    grid-column-start: 1;
+    grid-row-start: 6;
+
+
+}
+ .decimal{
+    grid-column-start: 1;
+    grid-row-start: 5;
+
+
+ }
+ .percent{
+    grid-column-start: 1;
+    grid-row-start: 3;
+
+ }
+ .square-root{
+    grid-column-start: 1;
+    grid-row-start: 4;
+
+
+ }
+ .c{
+    grid-column-start: 3;
+    grid-row-start: 2;
+    width: 110px;
+    height: 50px;
+
+
+
+ }
+ .ac{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    width: 110px;
+    height: 50px;
+
+ }
+
+
+
+
